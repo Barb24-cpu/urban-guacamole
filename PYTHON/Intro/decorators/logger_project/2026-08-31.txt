@@ -1,0 +1,10 @@
+ts:2026-08-31T14:48:58.297944----func:hello---time:0.12.ms
+ts:2026-08-31T14:48:58.299315----func:big_count---time:1.12.ms
+ts:2026-08-31T14:49:23.481828----func:hello---time:0.04.ms
+ts:2026-08-31T14:49:23.483197----func:big_count---time:1.29.ms
+ts:2026-08-31T14:49:36.905529----func:hello---time:0.05.ms
+ts:2026-08-31T14:49:36.906142----func:big_count---time:0.51.ms
+ts:2026-08-31T15:06:47.473371----func:hello---time:0.05.ms
+ts:2026-08-31T15:06:47.474285----func:big_count---time:0.83.ms
+ts:2026-08-31T15:06:57.014556----func:hello---time:0.07.ms
+ts:2026-08-31T15:06:57.015390----func:big_count---time:0.7.ms

@@ -13,31 +13,40 @@ getter and setter. ->
 -> account balance
 """
 
+"""
+Static <it doues not change>.<class properties> properties. <Belong to the class>
+Static Method<>.Class method. <function belongs to the class>
+
+Why would you want to use a class property.<>
+"""
+
+
 class BankAccount:
+    clients=0 #static
+    bank_name="Post Bank" #static property
 
-    def __init__(self, name, balance, account_no):
-        self.name = name
-        self._balance = balance
-        self.account_no = account_no
+    def __init__(self,name,balance,account_no):
+        self.name=name
+        self._balance=balance
+        self.account_no=account_no
 
-    # data i read
+    #data i read
     @property
     def balance(self):
         print("somebody tried to read johns balance")
         return self._balance
 
-    # to control updated
+    #to control updated
     @balance.setter
-    def balance(self, value):
-        if not isinstance(value, (int, float)):
+    def balance(self,value):
+        if not isinstance(value,(int,float)):
             print("Ensure you pass a number for new balance")
             return
-        if value < 0:
+        if value<0:
             print("Ensure new balance must not be less than 0")
             return
-        self._balance = value
+        self._balance=value
 
-    # setter
     def deposit(self):
         pass
 
@@ -50,9 +59,10 @@ class BankAccount:
         print(f"Account No {self.account_no}")
 
 
-john = BankAccount(name="John Mwangi", balance=0, account_no="223344223")
+john=BankAccount(name="John Mwangi",balance=0,account_no="223344223")
+# samuel=BankAccount(name="Samuel",balance=0,account_no="223344223")
 
-print("John blance ", john.balance)
-# john.show_account_details()
-# it is easily accessable ->
-# john.balance=-5000 #setting - undating the property
+# print("John blance ", john.balance)
+print("Bank Name",BankAccount.bank_name) #Class property
+print(john.account_no) #john
+print("Clients",BankAccount.clients) #class property

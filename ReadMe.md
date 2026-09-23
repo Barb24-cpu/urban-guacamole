@@ -9,3 +9,10 @@ Starting point.
 
 1. Create your project folder
 2. Create your virtual environment
+
+
+
+
+Flask for a server side rendered application.
+  1.create your project folder.
+  

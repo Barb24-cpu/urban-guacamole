@@ -1,0 +1,24 @@
+# Environment & Secrets (Never commit credentials!)
+.env
+.env.*
+*.env
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+
+# Virtual Environments & Package Managers
+venv/
+.venv/
+env/
+.pipenv/
+
+# Database Files & Local Backups
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# IDE Settings
+.vscode/
+.idea/

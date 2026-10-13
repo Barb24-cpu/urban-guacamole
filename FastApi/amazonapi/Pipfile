@@ -9,6 +9,9 @@ uvicorn = {extras = ["standard"], version = "*"}
 prisma = "*"
 pydantic = {extras = ["email"], version = "*"}
 bcrypt = "*"
+cloudinary = "*"
+python-multipart = "*"
+pyjwt = "*"
 
 [dev-packages]
 
